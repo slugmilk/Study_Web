@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+    <h2>폼태그</h2>
+    <form action="./regist" method="post">
+        <input type="hidden" name="hdd" value="서버로 전달될 값">
+
+        <p>아이디: <input type="text" maxlength="20" placeholder="아이디를 입력하세요" name="userid" id="userid" required></p>
+        <p>비밀번호: <input type="password" maxlength="20" placeholder="비밀번호를 입력하세요" name="userpw" id="userpw" required></p>
+        <p>성별: <label for="male">남자</label><input type="radio" name="gender" value="남자" id='male' checked> <label for="female">여자</label><input type="radio" name="gender" value="여자" id="female"></p>
+        <p>취미: <label for="hobby1">게임</label><input type="checkbox" name="hobby" id="hobby1" value="게임" checked>  <label for="hobby2">술</label><input type="checkbox" name="hobby" id="hobby2" value="술"> <label for="hobby3">다꾸</label><input type="checkbox" name="hobby" id="hobby3" value="다꾸"> <label for="hobby4">배드민턴</label><input type="checkbox" name="hobby" id="hobby4" value="배드민턴"> <label for="hobby5">드라마시청</label><input type="checkbox" name="hobby" id="hobby5" value="드라마시청"></p>
+        <p>첨부파일: <input type="file" name="file"></p>
+        <p>이메일: <input type="email" name="email"></p>
+        <p>웹사이트: <input type="url" name="url" value='http://www.naver.com' readonly></p>
+        <p>전화번호: <input type="tel" name="tel" disabled></p>
+        <p>생년월일: <input type="date" name="birthday"></p>
+        <p>좋아하는 숫자: <input type="number" min="1" max="10" step="1"></p>
+        <p>쿠폰번호: <input type="search" name="search"></p>
+        <p>좋아하는 색상: <input type="color" name="color"></p>
+        <p>프로그래밍 능력: <input type="range" min="0" max="10" value="3"></p>
+        <p>직업: 
+            <select name="job" id="job">
+                <option value="프로그래머">프로그래머</option>
+                <option value="공무원">공무원</option>
+                <option value="의사">의사</option>
+                <option value="법조인">법조인</option>
+                <option value="취준생">취준생</option>
+            </select>
+        </p>
+        <p>자기소개</p>
+        <p><textarea name="content" id="content" cols="50" rows="5"></textarea></p>
+        <p><input type="button" value="클릭하세요" onclick="alert('안녕?')"> <input type="reset" value="다시입력"> <input type="submit" value="회원가입"></p>
+    </form>
+</body>
+</html>
